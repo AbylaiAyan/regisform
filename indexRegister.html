@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>FutureLearn</title>
+	<link rel="stylesheet" href="style/styleRegister.css">
+  <!-- <script type="text/javascript" src="/js/jquery/jquery.js"></script> -->
+  <link rel="shortcut icon" type="image/x-icon" href="https://img.icons8.com/fluency/50/000000/cake.png" />
+
+</head>
+<body>
+	<div class="" id="main">
+		<!-- logo -->
+    <div class="header__tools_icon">
+      <a href="index.html"><img  class="header__tools_icon-img" src="https://img.icons8.com/fluency/70/000000/cake.png"/></a>
+    </div>
+		<!-- all -->
+		<div class="partRegister">
+      <div class="requiredCaution" id="vError">
+				<div class="requiredCaution-section">
+					<div class="requiredCaution__icon">
+						<img src="https://img.icons8.com/ios/20/000000/error--v1.png"/>
+					</div>
+					<div class="requiredCaution_text">
+						<p>We couldn’t sign you in. Check your email address and password, then try again.</p>
+					</div>
+				</div>
+				<div class="tri"> </div>
+			</div>
+			<div class="register"> <!-- links 2 -->
+				<div class="toregister"> <!-- Register -->
+					Register
+				</div>
+			</div>
+
+
+			<form class="form" action="indexRegister.html" method="post">
+				<div class="inForm">
+          <div class="inForm__firstName-section">
+						<label class="inForm__labelText" for="firstName">First Name *</label>
+            <input id="firstName" class="inForm__input firstName" type="text" name="firstName">
+            <label for="firstName" class="disap" id="error1">
+              <div class="requiredCaution-label">
+      					<div class="requiredCaution__icon-label">
+      						<img src="https://img.icons8.com/ios/15/000000/error--v1.png"/>
+      					</div>
+      					<div class="requiredCaution_text-label">
+      						<p>Fill in your first name</p>
+      					</div>
+      				</div>
+           </label>
+					</div>
+					<div class="inForm__lastName-section">
+						<label class="inForm__labelText" for="lastName">Last name or initial *</label>
+            <input id="lastName" class="inForm__input lastName" type="text" name="lastName">
+            <label for="lastName" class="disap" id="error2">
+              <div class="requiredCaution-label">
+      					<div class="requiredCaution__icon-label">
+      						<img src="https://img.icons8.com/ios/15/000000/error--v1.png"/>
+      					</div>
+      					<div class="requiredCaution_text-label">
+      						<p>Fill in your last name</p>
+      					</div>
+      				</div>
+           </label>
+					</div>
+          <div class="inForm__email-section">
+            <label class="inForm__labelText" for="email">Email adderss *</label>
+            <label class="inForm__labelText2" for="email">Please check your email address to make sure it's correct.</label>
+            <input id="email" class="inForm__input email" type="email" name="email">
+            <label for="email" class="disap" id="error4">
+              <div class="requiredCaution-label">
+      					<div class="requiredCaution__icon-label requiredCaution__icon-label_email">
+      						<img src="https://img.icons8.com/ios/15/000000/error--v1.png"/>
+      					</div>
+      					<div class="requiredCaution_text-label">
+      						<p>That email address looks wrong. Please check and try again.; Fill in your email address</p>
+      					</div>
+      				</div>
+           </label>
+          </div>
+          <div class="inForm__password-section">
+						<label class="inForm__labelText" for="password">Choose a password (min. 10 characters) *</label>
+            <input id="password" class="inForm__input password" type="password" name="password">
+            <label for="password" class="disap" id="error5">
+              <div class="requiredCaution-label">
+      					<div class="requiredCaution__icon-label">
+      						<img src="https://img.icons8.com/ios/15/000000/error--v1.png"/>
+      					</div>
+      					<div class="requiredCaution_text-label">
+      						<p>Fill in a password</p>
+      					</div>
+      				</div>
+           </label>
+					</div>
+          <!-- button -->
+					<div class="inForm__register-button">
+						<button class="inform__button" type="button" onclick="add()" name="button"> <span class="inform__buttonSpan">Register</span></button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+  <script src="Javascript/javaRegister.js"></script>
+</body>
